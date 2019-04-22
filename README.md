@@ -1,1 +1,1 @@
-# modelagem-mat-ex
+# Exemplos de algoritmos de modelagem matematica.
