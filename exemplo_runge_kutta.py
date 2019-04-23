@@ -7,8 +7,6 @@ def funcao(x, y):
     return 2.718281828**(-x) - (2*y)
 
 
-resultados = []
-
 x_n = float(input())
 y_n = float(input())
 h = float(input())
@@ -34,9 +32,6 @@ while n < m:
     y_n = y_n1
     n += 1
 
-for k in range(len(resultados)):
-    linha_x.append(resultados[k][0])
-    linha_y.append(resultados[k][1])
 
 plt.plot(linha_x,linha_y)
 plt.show()
