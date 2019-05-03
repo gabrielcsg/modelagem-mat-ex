@@ -30,12 +30,12 @@ while n < m:
     kn_4 = funcao(x_n+h,y_n+(h*kn_3))
     y_n1 = y_n + ((h/6)*(kn_1+(2*kn_2)+(2*kn_3)+kn_4))
 
-    linha_x.append(x_n)
-    linha_y.append(y_n)
+    linha_x.append(x_n1)
+    linha_y.append(y_n1)
     x_n = x_n1
     y_n = y_n1
-    n += 1
+    n += h
 
 # Adicionando as informações no gráfico.
-plt.plot(linha_x,linha_y)
+plt.plot(linha_x, linha_y)
 plt.show()

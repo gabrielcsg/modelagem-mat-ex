@@ -34,14 +34,14 @@ while n < m:
     x_n1 = x_n + (funcao1(t_n, x_n, y_n) * h)
     y_n1 = y_n + (funcao2(t_n, x_n, y_n) * h)
 
-    linha_t.append(t_n)
-    linha_x.append(x_n)
-    linha_y.append(y_n)
+    linha_t.append(t_n1)
+    linha_x.append(x_n1)
+    linha_y.append(y_n1)
 
     t_n = t_n1
     x_n = x_n1
     y_n = y_n1
-    n += 1
+    n += h
 
 # Adicionando as informações no gráfico.
 plt.plot(linha_t, linha_x, linha_t, linha_y)
